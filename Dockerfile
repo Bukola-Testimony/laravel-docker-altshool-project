@@ -60,8 +60,8 @@ USER www-data
 # Run artisan commands
 RUN php artisan key:generate
 RUN php artisan config:clear
-RUN php artisan migrate
-RUN php artisan db:seed
+#RUN php artisan migrate
+#RUN php artisan db:seed
 
 
 # Expose port 9000 and start php-fpm server
